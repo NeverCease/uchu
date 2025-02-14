@@ -1,0 +1,91 @@
+:root {
+  /*** gray ***/
+  --uchu-light-gray-raw: 95.57% 0.003 286.35;
+  --uchu-light-gray: oklch(var(--uchu-light-gray-raw));
+
+  --uchu-gray-raw: 84.68% 0.002 197.12;
+  --uchu-gray: oklch(var(--uchu-gray-raw));
+
+  --uchu-dark-gray-raw: 63.12% 0.004 219.55;
+  --uchu-dark-gray: oklch(var(--uchu-dark-gray-raw));
+
+  /*** red ***/
+  --uchu-light-red-raw: 88.98% 0.052 3.28;
+  --uchu-light-red: oklch(var(--uchu-light-red-raw));
+
+  --uchu-red-raw: 62.73% 0.209 12.37;
+  --uchu-red: oklch(var(--uchu-red-raw));
+
+  --uchu-dark-red-raw: 45.8% 0.177 17.7;
+  --uchu-dark-red: oklch(var(--uchu-dark-red-raw));
+
+  /*** pink ***/
+  --uchu-light-pink-raw: 95.8% 0.023 354.27;
+  --uchu-light-pink: oklch(var(--uchu-light-pink-raw));
+
+  --uchu-pink-raw: 85.43% 0.09 354.1;
+  --uchu-pink: oklch(var(--uchu-pink-raw));
+
+  --uchu-dark-pink-raw: 64.11% 0.084 353.91;
+  --uchu-dark-pink: oklch(var(--uchu-dark-pink-raw));
+
+  /*** purple ***/
+  --uchu-light-purple-raw: 89.1% 0.046 305.24;
+  --uchu-light-purple: oklch(var(--uchu-light-purple-raw));
+
+  --uchu-purple-raw: 58.47% 0.181 302.06;
+  --uchu-purple: oklch(var(--uchu-purple-raw));
+
+  --uchu-dark-purple-raw: 39.46% 0.164 298.29;
+  --uchu-dark-purple: oklch(var(--uchu-dark-purple-raw));
+
+  /*** blue ***/
+  --uchu-light-blue-raw: 89.66% 0.046 260.67;
+  --uchu-light-blue: oklch(var(--uchu-light-blue-raw));
+
+  --uchu-blue-raw: 62.39% 0.181 258.33;
+  --uchu-blue: oklch(var(--uchu-blue-raw));
+
+  --uchu-dark-blue-raw: 43.48% 0.17 260.2;
+  --uchu-dark-blue: oklch(var(--uchu-dark-blue-raw));
+
+  /*** green ***/
+  --uchu-light-green-raw: 93.96% 0.05 148.74;
+  --uchu-light-green: oklch(var(--uchu-light-green-raw));
+
+  --uchu-green-raw: 79.33% 0.179 145.62;
+  --uchu-green: oklch(var(--uchu-green-raw));
+
+  --uchu-dark-green-raw: 58.83% 0.158 145.05;
+  --uchu-dark-green: oklch(var(--uchu-dark-green-raw));
+
+  /*** yellow ***/
+  --uchu-light-yellow-raw: 97.05% 0.039 91.2;
+  --uchu-light-yellow: oklch(var(--uchu-light-yellow-raw));
+
+  --uchu-yellow-raw: 90.92% 0.125 92.56;
+  --uchu-yellow: oklch(var(--uchu-yellow-raw));
+
+  --uchu-dark-yellow-raw: 69.14% 0.109 91.04;
+  --uchu-dark-yellow: oklch(var(--uchu-dark-yellow-raw));
+
+  /*** orange ***/
+  --uchu-light-orange-raw: 93.83% 0.037 56.93;
+  --uchu-light-orange: oklch(var(--uchu-light-orange-raw));
+
+  --uchu-orange-raw: 78.75% 0.14163582809066333 54.32911089172009;
+  --uchu-orange: oklch(var(--uchu-orange-raw));
+
+  --uchu-dark-orange-raw: 58.28% 0.128 52.2;
+  --uchu-dark-orange: oklch(var(--uchu-dark-orange-raw));
+
+  /*** general ***/
+  --uchu-yang-raw: 99.4% 0 0;
+  --uchu-yang: oklch(var(--uchu-yang-raw));
+
+  --uchu-light-yin-raw: 91.87% 0.003 264.54;
+  --uchu-light-yin: oklch(var(--uchu-light-yin-raw));
+
+  --uchu-yin-raw: 14.38% 0.007 256.88;
+  --uchu-yin: oklch(var(--uchu-yin-raw));
+}
