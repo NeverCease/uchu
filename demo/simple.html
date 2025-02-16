@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+
+    <meta name="description" content="uchū is the color scheme for internet lovers, by NetOperator Wibby."/>
+    <meta name="referrer" content="strict-origin"/>
+    <meta name="theme-color" content="oklch(95.57% 0.003 286.35)"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta property="og:description" content="uchū is the color scheme for internet lovers, by NetOperator Wibby."/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:secure_url" content="./asset/image/og.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:site_name" content="uchū"/>
+    <meta property="og:title" content="uchū — the color scheme for internet lovers"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://uchu.style"/>
+
+    <title>uchū demo &middot; simple palette</title>
+    <link rel="canonical" href="https://uchu.style"/>
+    <link rel="icon" href="./favicon.svg"/>
+
+    <link href="../css/color.css" rel="stylesheet"/>
+    <link href="./asset/style/shared.css" rel="stylesheet"/>
+
+    <style>
+      body {
+        background-color: var(--uchu-yang);
+        color: var(--uchu-yin);
+      }
+
+      section {
+        a {
+          &:not([class]) {
+            &:not(:hover):not(:visited) {
+              color: var(--uchu-blue);
+            }
+
+            &:not(:visited):hover {
+              color: var(--uchu-pink);
+            }
+
+            &:not(:hover):visited {
+              color: var(--uchu-purple);
+            }
+
+            &:hover:visited {
+              color: var(--uchu-blue);
+            }
+          }
+        }
+
+        .swatches {
+          .swatch {
+            width: 50%;
+
+            h3 {
+              padding: 0 2rem 2rem 2rem;
+
+              @media (min-width: 901px) {
+                font-size: 3vw;
+              }
+
+              @media (max-width: 900px) {
+                font-size: 2rem;
+              }
+
+              span {
+                opacity: 0.3;
+              }
+            }
+          }
+        }
+
+        &.blue {
+          .info {
+            background-color: var(--uchu-light-blue);
+            color: var(--uchu-blue);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-blue);
+            color: var(--uchu-dark-blue);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-blue) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-blue);
+            color: var(--uchu-light-blue);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-blue) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.gray {
+          .info {
+            background-color: var(--uchu-light-gray);
+            color: var(--uchu-dark-gray);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-gray);
+            color: var(--uchu-dark-gray);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-gray) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-gray);
+            color: var(--uchu-light-gray);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-gray) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.green {
+          .info {
+            background-color: var(--uchu-light-green);
+            color: var(--uchu-dark-green);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-green);
+            color: var(--uchu-dark-green);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-green) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-green);
+            color: var(--uchu-light-green);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-green) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.intro {
+          .links {
+            .link {
+              &:first-of-type {
+                &:not(:hover) {
+                  background-color: var(--uchu-yin);
+                  color: var(--uchu-yang);
+                }
+
+                &:hover {
+                  background-color: var(--uchu-light-yin);
+                  color: var(--uchu-yin);
+                }
+              }
+
+              &:not(:first-of-type) {
+                color: var(--uchu-dark-pink);
+
+                &:not(:hover) {
+                  background-color: var(--uchu-pink);
+                }
+
+                &:hover {
+                  background-color: var(--uchu-light-pink);
+                }
+              }
+            }
+          }
+
+          .palette {
+            a {
+              &.blue {
+                background-color: var(--uchu-blue);
+              }
+
+              &.gray {
+                background-color: var(--uchu-gray);
+              }
+
+              &.green {
+                background-color: var(--uchu-green);
+              }
+
+              &.orange {
+                background-color: var(--uchu-orange);
+              }
+
+              &.pink {
+                background-color: var(--uchu-pink);
+              }
+
+              &.purple {
+                background-color: var(--uchu-purple);
+              }
+
+              &.red {
+                background-color: var(--uchu-red);
+              }
+
+              &.yellow {
+                background-color: var(--uchu-yellow);
+              }
+            }
+          }
+        }
+
+        &.orange {
+          .info {
+            background-color: var(--uchu-light-orange);
+            color: var(--uchu-dark-orange);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-orange);
+            color: var(--uchu-dark-orange);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-orange) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-orange);
+            color: var(--uchu-light-orange);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-orange) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.pink {
+          .info {
+            background-color: var(--uchu-light-pink);
+            color: var(--uchu-dark-pink);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-pink);
+            color: var(--uchu-dark-pink);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-pink) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-pink);
+            color: var(--uchu-light-pink);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-pink) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.purple {
+          .info {
+            background-color: var(--uchu-light-purple);
+            color: var(--uchu-dark-purple);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-purple);
+            color: var(--uchu-dark-purple);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-purple) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-purple);
+            color: var(--uchu-light-purple);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-purple) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.red {
+          .info {
+            background-color: var(--uchu-light-red);
+            color: var(--uchu-dark-red);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-red);
+            color: var(--uchu-dark-red);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-red) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-red);
+            color: var(--uchu-light-red);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-red) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.yellow {
+          .info {
+            background-color: var(--uchu-light-yellow);
+            color: var(--uchu-dark-yellow);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-yellow);
+            color: var(--uchu-dark-yellow);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-yellow) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-dark-yellow);
+            color: var(--uchu-light-yellow);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-dark-yellow) 0%, transparent 100%);
+            }
+          }
+        }
+
+        &.yin {
+          .info {
+            background-color: var(--uchu-light-yin);
+            color: var(--uchu-yin);
+          }
+
+          .swatch:nth-child(1) {
+            background-color: var(--uchu-yin);
+            color: var(--uchu-light-yin);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-yin-2) 0%, transparent 100%);
+            }
+          }
+
+          .swatch:nth-child(2) {
+            background-color: var(--uchu-yang);
+            color: var(--uchu-yin);
+
+            p::after {
+              background-image: linear-gradient(to top, var(--uchu-yang) 0%, transparent 100%);
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio id="speak" preload>
+      <!--/ https://www.wordhippo.com/what-is/the/japanese-word-for-244fb75b19415c9ee4f143b34b4b241236fb63f5.html /-->
+      <source src="./asset/audio/pronounciation.ogg" type="audio/ogg"/>
+      <source src="./asset/audio/pronounciation.wav" type="audio/wav"/>
+      <source src="./asset/audio/pronounciation.mp3" type="audio/mp3"/>
+    </audio>
+
+    <section class="intro">
+      <h1 onclick="playAudio()" title="click to hear pronounciation">uchū</h1>
+
+      <nav class="palette">
+        <a class="gray" href="#uchu_gray"></a>
+        <a class="red" href="#uchu_red"></a>
+        <a class="pink" href="#uchu_pink"></a>
+        <a class="purple" href="#uchu_purple"></a>
+        <a class="blue" href="#uchu_blue"></a>
+        <a class="green" href="#uchu_green"></a>
+        <a class="yellow" href="#uchu_yellow"></a>
+        <a class="orange" href="#uchu_orange"></a>
+      </nav>
+
+      <p>the color scheme for internet lovers<br/>by <a href="https://webb.page?ref=uchu.style">NetOperator Wibby</a></p>
+
+      <nav class="links">
+        <a class="link" href="https://github.com/NeverCease/uchu" target="_blank">Repo</a>
+        <a class="link" href="./index.html">Expanded Palette</a>
+      </nav>
+
+      <div class="scroll-indicator">scroll</div>
+    </section>
+
+    <section class="gray" id="uchu_gray">
+      <div class="info">
+        <p>oklch(95.57% 0.003 286.35)</p>
+        <h2><span>var(</span>--uchu-light-gray<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-gray<span>)</span></h3>
+          <p>oklch(84.68% 0.002 197.12)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-gray<span>)</span></h3>
+          <p>oklch(63.12% 0.004 219.55)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="red" id="uchu_red">
+      <div class="info">
+        <p>oklch(88.98% 0.052 3.28)</p>
+        <h2><span>var(</span>--uchu-light-red<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-red<span>)</span></h3>
+          <p>oklch(62.73% 0.209 12.37)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-red<span>)</span></h3>
+          <p>oklch(45.8% 0.177 17.7)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="pink" id="uchu_pink">
+      <div class="info">
+        <p>oklch(95.8% 0.023 354.27)</p>
+        <h2><span>var(</span>--uchu-light-pink<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-pink<span>)</span></h3>
+          <p>oklch(85.43% 0.09 354.1)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-pink<span>)</span></h3>
+          <p>oklch(64.11% 0.084 353.91)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="purple" id="uchu_purple">
+      <div class="info">
+        <p>oklch(89.1% 0.046 305.24)</p>
+        <h2><span>var(</span>--uchu-light-purple<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-purple<span>)</span></h3>
+          <p>oklch(58.47% 0.181 302.06)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-purple<span>)</span></h3>
+          <p>oklch(39.46% 0.164 298.29)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="blue" id="uchu_blue">
+      <div class="info">
+        <p>oklch(89.66% 0.046 260.67)</p>
+        <h2><span>var(</span>--uchu-light-blue<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-blue<span>)</span></h3>
+          <p>oklch(62.39% 0.181 258.33)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-blue<span>)</span></h3>
+          <p>oklch(43.48% 0.17 260.2)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="green" id="uchu_green">
+      <div class="info">
+        <p>oklch(93.96% 0.05 148.74)</p>
+        <h2><span>var(</span>--uchu-light-green<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-green<span>)</span></h3>
+          <p>oklch(79.33% 0.179 145.62)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-green<span>)</span></h3>
+          <p>oklch(58.83% 0.158 145.05)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="yellow" id="uchu_yellow">
+      <div class="info">
+        <p>oklch(97.05% 0.039 91.2)</p>
+        <h2><span>var(</span>--uchu-light-yellow<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-yellow<span>)</span></h3>
+          <p>oklch(90.92% 0.125 92.56)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-yellow<span>)</span></h3>
+          <p>oklch(69.14% 0.109 91.04)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="orange" id="uchu_orange">
+      <div class="info">
+        <p>oklch(93.83% 0.037 56.93)</p>
+        <h2><span>var(</span>--uchu-light-orange<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-orange<span>)</span></h3>
+          <p>oklch(78.75% 0.14163582809066333 54.32911089172009)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-dark-orange<span>)</span></h3>
+          <p>oklch(58.28% 0.128 52.2)</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="yin" id="uchu_yin">
+      <div class="info">
+        <p>oklch(91.87% 0.003 264.54)</p>
+        <h2><span>var(</span>--uchu-light-yin<span>)</span></h2>
+      </div>
+
+      <ul class="swatches">
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-yin<span>)</span></h3>
+          <p>oklch(14.38% 0.007 256.88)</p>
+        </li>
+
+        <li class="swatch">
+          <h3><span>var(</span>--uchu-yang<span>)</span></h3>
+          <p>oklch(99.4% 0 0)</p>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      function playAudio() {
+        const audio = document.getElementById("speak");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>

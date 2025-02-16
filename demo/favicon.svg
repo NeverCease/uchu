@@ -1,0 +1,56 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle {
+      animation: 60s linear infinite both circle-animation;
+    }
+
+    @keyframes circle-animation {
+      0% {
+        /*** uchu-red ***/
+        fill: oklch(62.73% 0.209 12.37);
+      }
+
+      12% {
+        /*** uchu-orange ***/
+        fill: oklch(78.75% 0.14163582809066333 54.32911089172009);
+      }
+
+      24% {
+        /*** uchu-yellow ***/
+        fill: oklch(90.92% 0.125 92.56);
+      }
+
+      36% {
+        /*** uchu-green ***/
+        fill: oklch(79.33% 0.179 145.62);
+      }
+
+      48% {
+        /*** uchu-blue ***/
+        fill: oklch(62.39% 0.181 258.33);
+      }
+
+      60% {
+        /*** uchu-purple ***/
+        fill: oklch(58.47% 0.181 302.06);
+      }
+
+      72% {
+        /*** uchu-pink ***/
+        fill: oklch(85.43% 0.09 354.1);
+      }
+
+      84% {
+        /*** uchu-gray ***/
+        fill: oklch(84.68% 0.002 197.12);
+      }
+
+      96% {
+        /*** uchu-yin ***/
+        fill: oklch(14.38% 0.007 256.88);
+      }
+    }
+  </style>
+
+  <circle fill="oklch(85.43% 0.09 354.1)" cx="50" cy="50" r="45"/>
+</svg>

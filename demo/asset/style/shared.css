@@ -1,0 +1,192 @@
+*, *::before, *::after {
+  margin: 0; padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.33;
+}
+
+section {
+  width: 100%; height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    line-height: 1;
+    text-align: center;
+
+    @media (min-width: 901px) {
+      font-size: 5vw;
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      font-size: 5rem;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 2rem;
+    }
+
+    span {
+      opacity: 0.15;
+    }
+  }
+
+  h3 {
+    font-size: 5vw;
+    line-height: 1;
+    position: relative;
+    text-align: right;
+
+    &::after {
+      width: 100%; height: 100%;
+      bottom: 0; left: 0;
+
+      content: "";
+      position: absolute;
+    }
+  }
+
+  a {
+    transition: color 0.2s;
+  }
+
+  .info,
+  .swatches {
+    width: 100%; height: 50%;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+
+    p {
+      top: 1rem; left: 1rem;
+      letter-spacing: 0.05rem;
+      position: absolute;
+    }
+
+    h3 {
+      bottom: 1rem; right: 1rem;
+      position: absolute;
+    }
+  }
+
+  .swatches {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    list-style-type: none;
+
+    .swatch {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: end;
+      position: relative;
+
+      h3 {
+        z-index: 1;
+      }
+
+      p {
+        height: 100%;
+        padding: 1.5rem 1rem;
+        opacity: 0.5;
+        position: absolute;
+        writing-mode: vertical-rl;
+
+        @media (min-width: 701px) {
+          width: 100%;
+        }
+
+        &::after {
+          width: 100%; height: 75%;
+          bottom: 0; right: 0;
+
+          content: "";
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  &.intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      cursor: pointer;
+      font-size: 10rem;
+      max-width: 280px;
+      width: fit-content;
+    }
+
+    p {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .links {
+      .link {
+        border-radius: 5rem;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+
+        &:not(:first-of-type) {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+
+    .palette {
+      display: flex;
+      flex-direction: row;
+      width: 280px;
+
+      a {
+        width: calc(280px / 8); height: calc(280px / 8);
+      }
+    }
+
+    .scroll-indicator {
+      bottom: 0; left: 0;
+
+      animation: loading 2s infinite;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      padding: 2rem;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes loading {
+  50% {
+    color: var(--uchu-yang);
+  }
+}

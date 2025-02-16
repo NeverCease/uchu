@@ -1,3 +1,5 @@
 # uchū
 
-> Design framework for NeverCease properties…and for you, too. I guess.
+![](./demo/asset/image/og.png)
+
+> the color scheme for internet lovers, by [NetOperator Wibby](https://webb.page).
