@@ -43,7 +43,7 @@ If you're coding a web app, you probably want to use the expanded palette. Or no
 
 ```svelte
 <script lang="ts">
-// this example is using Svelte but probably applies to others as well
+  // this example is using Svelte but probably applies to others as well
 </script>
 
 <style lang="scss">
