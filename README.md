@@ -16,6 +16,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ### Gray
 
+![](./demo/asset/image/expanded/gray.png)
+
 - `var(--uchu-gray-1)`
 - `var(--uchu-gray-2)`
 - `var(--uchu-gray-3)`
@@ -27,6 +29,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 - `var(--uchu-gray-9)`
 
 ### Red
+
+![](./demo/asset/image/expanded/red.png)
 
 - `var(--uchu-red-1)`
 - `var(--uchu-red-2)`
@@ -40,6 +44,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ### Pink
 
+![](./demo/asset/image/expanded/pink.png)
+
 - `var(--uchu-pink-1)`
 - `var(--uchu-pink-2)`
 - `var(--uchu-pink-3)`
@@ -51,6 +57,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 - `var(--uchu-pink-9)`
 
 ### Purple
+
+![](./demo/asset/image/expanded/purple.png)
 
 - `var(--uchu-purple-1)`
 - `var(--uchu-purple-2)`
@@ -64,6 +72,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ### Blue
 
+![](./demo/asset/image/expanded/blue.png)
+
 - `var(--uchu-blue-1)`
 - `var(--uchu-blue-2)`
 - `var(--uchu-blue-3)`
@@ -75,6 +85,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 - `var(--uchu-blue-9)`
 
 ### Green
+
+![](./demo/asset/image/expanded/green.png)
 
 - `var(--uchu-green-1)`
 - `var(--uchu-green-2)`
@@ -88,6 +100,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ### Yellow
 
+![](./demo/asset/image/expanded/yellow.png)
+
 - `var(--uchu-yellow-1)`
 - `var(--uchu-yellow-2)`
 - `var(--uchu-yellow-3)`
@@ -100,6 +114,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ### Orange
 
+![](./demo/asset/image/expanded/orange.png)
+
 - `var(--uchu-orange-1)`
 - `var(--uchu-orange-2)`
 - `var(--uchu-orange-3)`
@@ -111,6 +127,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 - `var(--uchu-orange-9)`
 
 ### General
+
+![](./demo/asset/image/expanded/general.png)
 
 - `var(--uchu-yin-1)`
 - `var(--uchu-yin-2)`
@@ -130,11 +148,15 @@ Sometimes, an abundance of color options is a hindrance. Analysis paralysis, ami
 
 ### Gray
 
+![](./demo/asset/image/reduced/gray.png)
+
 - `var(--uchu-light-gray)`
 - `var(--uchu-gray)`
 - `var(--uchu-dark-gray)`
 
 ### Red
+
+![](./demo/asset/image/reduced/red.png)
 
 - `var(--uchu-light-red)`
 - `var(--uchu-red)`
@@ -142,11 +164,15 @@ Sometimes, an abundance of color options is a hindrance. Analysis paralysis, ami
 
 ### Pink
 
+![](./demo/asset/image/reduced/pink.png)
+
 - `var(--uchu-light-pink)`
 - `var(--uchu-pink)`
 - `var(--uchu-dark-pink)`
 
 ### Purple
+
+![](./demo/asset/image/reduced/purple.png)
 
 - `var(--uchu-light-purple)`
 - `var(--uchu-purple)`
@@ -154,11 +180,15 @@ Sometimes, an abundance of color options is a hindrance. Analysis paralysis, ami
 
 ### Blue
 
+![](./demo/asset/image/reduced/blue.png)
+
 - `var(--uchu-light-blue)`
 - `var(--uchu-blue)`
 - `var(--uchu-dark-blue)`
 
 ### Green
+
+![](./demo/asset/image/reduced/green.png)
 
 - `var(--uchu-light-green)`
 - `var(--uchu-green)`
@@ -166,17 +196,23 @@ Sometimes, an abundance of color options is a hindrance. Analysis paralysis, ami
 
 ### Yellow
 
+![](./demo/asset/image/reduced/yellow.png)
+
 - `var(--uchu-light-yellow)`
 - `var(--uchu-yellow)`
 - `var(--uchu-dark-yellow)`
 
 ### Orange
 
+![](./demo/asset/image/reduced/orange.png)
+
 - `var(--uchu-light-orange)`
 - `var(--uchu-orange)`
 - `var(--uchu-dark-orange)`
 
 ### General
+
+![](./demo/asset/image/reduced/general.png)
 
 - `var(--uchu-light-yin)`
 - `var(--uchu-yin)`
