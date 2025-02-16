@@ -32,4 +32,7 @@ No, I will not add other color spaces.
   - [Orange](./documentation/REDUCED.md#orange)
   - [General](./documentation/REDUCED.md#general)
   - [Sass](./documentation/REDUCED.md#sass)
+- [Usage](./documentation/USAGE.md)
+  - [Pure](./documentation/USAGE.md#pure)
+  - [Svelte/SvelteKit](./documentation/USAGE.md#svelte-sveltekit)
 - [Why UNLICENSE?](./documentation/UNLICENSE.md)
