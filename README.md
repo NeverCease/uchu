@@ -2,9 +2,9 @@
 
 ![](./demo/asset/image/og.png)
 
-**uchū is the color scheme for internet lovers, by [NetOperator Wibby](https://webb.page).**
+**uchū is the color scheme for internet lovers, by [NetOperator Wibby](https://webb.page).** uchū utilizes the OKLCH color space [for reasons](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl). I've been using this color scheme for personal projects for about a year and have been quite pleased with it.
 
-uchū utilizes the OKLCH color space [for reasons](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl). I've been using this color scheme for personal projects for about a year and have been quite pleased with it.
+No, I will not add other color spaces.
 
 
 
