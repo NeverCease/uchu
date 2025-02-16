@@ -22,7 +22,7 @@ If you're coding a website by hand, you probably want to use the reduced palette
     <style lang="scss">
       body {
         background-color: var(--uchu-yang);
-        color: var(--uchu-yin-9);
+        color: var(--uchu-yin);
       }
     </style>
   </head>
