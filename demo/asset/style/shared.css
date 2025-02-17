@@ -185,6 +185,34 @@ section {
   }
 }
 
+.swatch, .info {
+  cursor: pointer;
+}
+
+#toast {
+  visibility: hidden;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  background-color: #202225;
+  color: #e3e4e6;
+  border-radius: 0.25rem;
+  transition-property: all;
+  transition-duration: 200ms;
+  z-index: 999;
+}
+
+#toast.visible {
+  visibility: visible;
+}
+
+#toast.invisible {
+  visibility: hidden;
+}
+
 @keyframes loading {
   50% {
     color: var(--uchu-yang);
