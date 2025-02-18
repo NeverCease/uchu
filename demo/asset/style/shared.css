@@ -16,10 +16,13 @@ body {
 }
 
 section {
-  width: 100%; height: 100vh;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  &:not(.intro) {
+    height: 100vh;
+  }
 
   &:not(:last-of-type) {
     margin-bottom: 1rem;
@@ -132,6 +135,7 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 45vh;
     justify-content: center;
 
     h1 {
@@ -167,20 +171,6 @@ section {
       a {
         width: calc(280px / 8); height: calc(280px / 8);
       }
-    }
-
-    .scroll-indicator {
-      bottom: 0; left: 0;
-
-      animation: loading 2s infinite;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.2rem;
-      padding: 2rem;
-      position: absolute;
-      text-align: center;
-      text-transform: uppercase;
-      width: 100%;
     }
   }
 }
