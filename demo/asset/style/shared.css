@@ -197,8 +197,8 @@ section {
   top: 0;
   right: 0;
   font-size: 1.5rem;
-  background-color: #202225;
-  color: #e3e4e6;
+  background-color: var(--uchu-yin);
+  color: var(--uchu-yang);
   border-radius: 0.25rem;
   transition-property: all;
   transition-duration: 200ms;
