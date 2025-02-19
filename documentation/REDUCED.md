@@ -1,6 +1,6 @@
 # Reduced Palette
 
-Sometimes, an abundance of color options is a hindrance. Analysis paralysis, amirite? To this end [`css/color.css`](../css/color.css) reduces the number of stops in the expanded palette to three, save for yin (it only has two) and yang (it only has one).
+Sometimes, an abundance of color options is a hindrance. Analysis paralysis, amirite? To this end [`color.css`](../definitions/style/color.css) reduces the number of stops in the expanded palette to three, save for yin (it only has two) and yang (it only has one).
 
 If you want more granularity (read: opacity), you can call the raw version of the color (append `-raw` to the variable name) which will return the OKLCH values so you can do something like this: `oklch(var(--uchu-light-gray-raw) / 40%)`.
 
@@ -98,4 +98,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ## Sass
 
-If you know what Sass is, you'll know how to use [`sass/color.scss`](../sass/color.scss). I didn't provide raw versions of them because Sass comes with so many color tools (and, I've been using regular CSS variables in my Sass _anyways_).
+If you know what Sass is, you'll know how to use [`color.scss`](../definitions/style/color.scss). I didn't provide raw versions of them because Sass comes with so many color tools (and, I've been using regular CSS variables in my Sass _anyways_).
+
+## JS
+
+If you are a fan of CSS-in-JS or need to programmatically grab color values, there's [`color.json`](../definitions/script/color.json) and [`color.ts`](../definitions/script/color.ts) includes available.

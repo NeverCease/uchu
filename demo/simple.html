@@ -20,11 +20,12 @@
     <meta property="og:url" content="https://uchu.style"/>
 
     <title>uchū demo &middot; simple palette</title>
+
     <link rel="canonical" href="https://uchu.style"/>
     <link rel="icon" href="./favicon.svg"/>
 
-    <link href="../css/color.css" rel="stylesheet"/>
-    <link href="./asset/style/shared.css?v=2025.02.18" rel="stylesheet"/>
+    <link href="../definitions/style/color.css" rel="stylesheet"/>
+    <link href="./asset/style/shared.css?v=2025.02.19" rel="stylesheet"/>
 
     <style>
       body {
@@ -366,7 +367,13 @@
           }
         }
       }
+
+      .notify {
+        background-color: var(--uchu-yin);
+      }
     </style>
+
+    <script src="./asset/script/shared.js"></script>
   </head>
 
   <body>
@@ -570,11 +577,31 @@
       </ul>
     </section>
 
+    <aside class="notify">
+      <p>Color value added to clipboard</p>
+    </aside>
+
     <script>
-      function playAudio() {
-        const audio = document.getElementById("speak");
-        audio.play();
-      }
+      const swatches = document.querySelectorAll([".info", ".swatch"]);
+      let notifierTimeout;
+
+      swatches.forEach(swatch => {
+        swatch.addEventListener("click", () => {
+          const colorValue = swatch.getElementsByTagName("p")[0].textContent;
+          const notifier = document.querySelector(".notify");
+
+          notifier.classList.remove("active");
+
+          if (copyTextToClipboard(colorValue)) {
+            clearTimeout(notifierTimeout);
+            notifier.classList.add("active");
+
+            notifierTimeout = setTimeout(() => {
+              notifier.classList.remove("active");
+            }, 1500);
+          }
+        });
+      });
     </script>
   </body>
 </html>

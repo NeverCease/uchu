@@ -1,6 +1,6 @@
 # Expanded Palette
 
-The default color palette is [`css/color_expanded.css`](../css/color_expanded.css) and consists of ten colors, eight of which have nine stops; gray, red, pink, purple, blue, green, yellow, orange. Yin (black) has ten stops while yang (white) only has one stop.
+The default color palette is [`color_expanded.css`](../definitions/style/color_expanded.css) and consists of ten colors, eight of which have nine stops; gray, red, pink, purple, blue, green, yellow, orange. Yin (black) has ten stops while yang (white) only has one stop.
 
 If you want more granularity (read: opacity), you can call the raw version of the color (append `-raw` to the variable name) which will return the OKLCH values so you can do something like this: `oklch(var(--uchu-gray-1-raw) / 40%)`.
 
@@ -154,4 +154,8 @@ If you want more granularity (read: opacity), you can call the raw version of th
 
 ## Sass
 
-If you know what Sass is, you'll know how to use [`sass/color_expanded.scss`](../sass/color_expanded.scss). I didn't provide raw versions of them because Sass comes with so many color tools (and, I've been using regular CSS variables in my Sass _anyways_).
+If you know what Sass is, you'll know how to use [`color_expanded.scss`](../definitions/style/color_expanded.scss). I didn't provide raw versions of them because Sass comes with so many color tools (and, I've been using regular CSS variables in my Sass _anyways_).
+
+## JS
+
+If you are a fan of CSS-in-JS or need to programmatically grab color values, there's [`color.json`](../definitions/script/color_expanded.json) and [`color.ts`](../definitions/script/color_expanded.ts) includes available.

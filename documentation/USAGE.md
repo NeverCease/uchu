@@ -19,7 +19,7 @@ If you're coding a website by hand, you probably want to use the reduced palette
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://uchu.style/color.css" rel="stylesheet"/>
 
-    <style lang="scss">
+    <style>
       body {
         background-color: var(--uchu-yang);
         color: var(--uchu-yin);
