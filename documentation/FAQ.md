@@ -4,10 +4,6 @@ These questions are sourced from the sentiment and actual statements from people
 
 
 
----
-
-
-
 ## Origin
 
 > Where did these colors come from?

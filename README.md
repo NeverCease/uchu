@@ -35,6 +35,8 @@ No, [I will not add other color spaces](./documentation/FAQ.md#normal-colors).
 - [Usage](./documentation/USAGE.md)
   - [Pure](./documentation/USAGE.md#pure)
   - [Svelte/SvelteKit](./documentation/USAGE.md#svelte-sveltekit)
+- [Showcase](./documentation/SHOWCASE.md)
+  - [Website](./documentation/SHOWCASE.md#websites)
 - [FAQ](./documentation/FAQ.md)
   - [Origin](./documentation/FAQ.md#origin)
   - [Normal colors](./documentation/FAQ.md#normal-colors)
