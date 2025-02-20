@@ -4,6 +4,12 @@ If you use uchū for your projects/websites/whatever, file a PR or let me know v
 
 
 
+## Apps
+
+- [Pinwheel](https://bjango.com/mac/pinwheel)
+
+
+
 ## Websites
 
 - https://webb.page
